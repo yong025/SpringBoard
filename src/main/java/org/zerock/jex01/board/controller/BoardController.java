@@ -70,7 +70,7 @@ public class BoardController {
 
     }
 
-    @GetMapping({"/read","/modify"})
+    @GetMapping({"/read","/modify","read2"})
     public void read(Long bno,PageRequestDTO pageRequestDTO, Model model){//
         log.info("c   read:" + bno);
         log.info("c   read:" + pageRequestDTO);

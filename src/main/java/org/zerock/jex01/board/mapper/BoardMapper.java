@@ -9,7 +9,6 @@ public interface BoardMapper {
 
 //    @Insert() 여기다가 안만드는게 좋음. -> 실무에서는 xml sql을 넣기 때문에
 
-
     void insert(Board board);
 
     List<Board> getList(PageRequestDTO pageRequestDTO);

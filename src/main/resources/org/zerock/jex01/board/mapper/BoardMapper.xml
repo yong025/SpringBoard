@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.zerock.jex01.board.mapper.BoardMapper">
 
-    <sql id="search"> <!-- sql에 구멍을 내는 것 -->
+    <sql id="search"><!-- sql에 구멍을 내는 것 -->
         <!-- separator는 반복이 끝나는 구간마다 " OR "를 넣으라는 의미 -->
         <if test="type != null">
             <foreach collection="arr" item="item" separator=" OR " open="WHERE (" close=")">
